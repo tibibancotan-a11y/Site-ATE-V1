@@ -1,0 +1,89 @@
+[09-Jul-2025 19:45:20 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/r70111agro/public_html/admin/panel.php on line 17
+[09-Jul-2025 19:48:13 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/r70111agro/public_html/admin/panel.php on line 17
+[09-Jul-2025 19:48:28 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/r70111agro/public_html/admin/panel.php on line 17
+[11-Jul-2025 13:25:16 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 43
+[11-Jul-2025 13:37:55 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '$stats' (T_VARIABLE), expecting identifier (T_STRING) in /home/r70111agro/public_html/admin/panel.php on line 29
+[11-Jul-2025 13:40:42 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '$stats' (T_VARIABLE), expecting identifier (T_STRING) in /home/r70111agro/public_html/admin/panel.php on line 29
+[11-Jul-2025 13:40:47 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '$stats' (T_VARIABLE), expecting identifier (T_STRING) in /home/r70111agro/public_html/admin/panel.php on line 29
+[11-Jul-2025 13:40:48 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '$stats' (T_VARIABLE), expecting identifier (T_STRING) in /home/r70111agro/public_html/admin/panel.php on line 29
+[11-Jul-2025 13:40:54 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '$stats' (T_VARIABLE), expecting identifier (T_STRING) in /home/r70111agro/public_html/admin/panel.php on line 29
+[11-Jul-2025 13:41:10 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '$categorii_utilaje' (T_VARIABLE), expecting identifier (T_STRING) in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 13:42:32 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '$val' (T_VARIABLE), expecting identifier (T_STRING) in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 13:43:07 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '$_GET' (T_VARIABLE), expecting identifier (T_STRING) in /home/r70111agro/public_html/admin/panel.php on line 73
+[11-Jul-2025 13:44:28 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 13:44:44 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:22:34 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:22:43 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:22:45 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:22:49 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:22:51 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:22:54 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:24:02 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:24:27 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:29:45 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:29:48 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:30:48 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:30:57 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:31:00 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:33:32 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:33:34 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:33:38 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:33:41 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:33:47 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 46
+[11-Jul-2025 20:43:56 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 20:44:00 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 20:44:02 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 20:44:04 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 20:49:55 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 20:49:57 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 20:49:59 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 20:58:32 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 20:58:32 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 53
+[11-Jul-2025 21:09:59 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 21:09:59 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 53
+[11-Jul-2025 21:09:59 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 89
+[11-Jul-2025 21:10:04 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 21:10:04 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 53
+[11-Jul-2025 21:10:04 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 89
+[11-Jul-2025 21:14:21 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 21:14:21 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 53
+[11-Jul-2025 21:14:21 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 89
+[11-Jul-2025 21:15:27 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[11-Jul-2025 21:15:27 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 53
+[11-Jul-2025 21:15:27 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 89
+[12-Jul-2025 08:23:59 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 45
+[12-Jul-2025 08:23:59 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/panel.php on line 80
+[12-Jul-2025 08:29:43 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '<', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 99
+[12-Jul-2025 08:30:08 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 112
+[12-Jul-2025 08:30:26 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 113
+[12-Jul-2025 08:30:52 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 113
+[12-Jul-2025 08:34:35 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '?>', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 113
+[12-Jul-2025 08:35:22 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 113
+[12-Jul-2025 08:35:55 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 113
+[12-Jul-2025 08:36:13 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '?>', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 115
+[12-Jul-2025 08:39:03 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 112
+[12-Jul-2025 08:43:19 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '?>', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 100
+[12-Jul-2025 08:44:39 Europe/Bucharest] PHP Parse error:  syntax error, unexpected '?>', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 100
+[12-Jul-2025 08:48:41 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 97
+[12-Jul-2025 08:49:10 Europe/Bucharest] PHP Parse error:  syntax error, unexpected end of file, expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 99
+[12-Jul-2025 08:49:24 Europe/Bucharest] PHP Parse error:  syntax error, unexpected end of file, expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 99
+[12-Jul-2025 08:50:26 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 48
+[12-Jul-2025 08:55:05 Europe/Bucharest] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/r70111agro/public_html/admin/save_ad.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/r70111agro/public_html/admin/save_ad.php on line 38
+[12-Jul-2025 09:28:51 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 48
+[12-Jul-2025 09:44:42 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 49
+[13-Jul-2025 11:42:46 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 49
+[13-Jul-2025 11:43:31 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 49
+[13-Jul-2025 11:48:10 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 49
+[13-Jul-2025 11:49:36 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 49
+[13-Jul-2025 11:54:52 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 49
+[13-Jul-2025 12:01:00 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 49
+[13-Jul-2025 12:21:16 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 50
+[13-Jul-2025 12:34:27 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 50
+[13-Jul-2025 13:42:21 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 56
+[13-Jul-2025 13:58:03 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 56
+[13-Jul-2025 14:00:43 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 50
+[13-Jul-2025 14:03:22 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/r70111agro/public_html/admin/edit.php on line 95
+[13-Jul-2025 14:07:34 Europe/Bucharest] PHP Parse error:  syntax error, unexpected 'Tractoare' (T_STRING), expecting ']' in /home/r70111agro/public_html/includes/categorii.php on line 20

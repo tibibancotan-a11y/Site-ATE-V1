@@ -1,0 +1,665 @@
+/* ===================== RESET GENERAL ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* ===================== HEADER ===================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+header .logo-wrapper img {
+  height: 50px;
+}
+
+.descriere {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.buton-actiuni {
+  display: flex;
+  gap: 10px;
+}
+
+.buton-actiuni a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: #28a745;
+  color: #fff;
+  font-size: 14px;
+}
+
+.buton-actiuni a:hover {
+  background: #218838;
+}
+
+.admin-link {
+  margin-left: 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===================== FILTRU ===================== */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.btn-filtru {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-filtru.active,
+.btn-filtru:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-filtru.reset {
+  background: #ff9800;
+  color: #fff;
+  border-color: #e58900;
+}
+
+/* Subfiltre */
+#subcategorii-container {
+  width: 100%;
+}
+
+#subcategorii {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* ===================== LISTĂ ANUNȚURI ===================== */
+.lista-anunturi {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card .img-container img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card .info-container {
+  padding: 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.card .pret {
+  font-weight: bold;
+  color: #e53935;
+  margin-bottom: 4px;
+}
+
+.card .locatie {
+  font-size: 13px;
+  color: #777;
+}
+
+.card .descriere-scurta {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* ===================== POPUP DETALII ANUNȚ ===================== */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9998;
+}
+
+.popup-overlay.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #fff;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.popup-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.popup-body {
+  display: flex;
+  width: 100%;
+}
+
+.popup-gallery {
+  flex: 1;
+  background: #000;
+}
+
+.popup-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.popup-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.popup-desc {
+  white-space: pre-line;
+}
+
+/* ===================== FULLSCREEN GALLERY ===================== */
+#fullscreen-gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#fullscreen-gallery.hidden {
+  display: none;
+}
+
+#fullscreen-gallery .fullscreen-swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fullscreen-gallery .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#fullscreen-gallery .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fullscreen-gallery img {
+  max-width: 95%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+/* Buton de închidere fullscreen */
+#fullscreen-gallery .close-fullscreen {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* ===================== LOADER ===================== */
+#loader {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== Tema portocaliu pentru filtre (integrată) ===== */
+:root{
+  --primary: #f97316;
+  --primary-dark: #ea580c;
+  --primary-light: #fed7aa;
+  --border: #e5e7eb;
+  --bg-muted: #f9fafb;
+}
+
+/* Bara de filtre */
+.filter-bar{
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  padding: 10px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Buton de filtru */
+.btn-filtru{
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Iconiță (dacă vrei să adaugi) */
+.btn-filtru .icon{
+  font-size: 14px;
+}
+
+/* Stare hover / activ */
+.btn-filtru:hover{
+  background: var(--bg-muted);
+  border-color: #d1d5db;
+}
+.btn-filtru.active{
+  background: var(--primary);
+  border-color: var(--primary-dark);
+  color: #ffffff;
+}
+
+/* Buton "Toate" – îl evidențiem ușor */
+.btn-filtru.reset{
+  background: var(--primary-light);
+  border-color: var(--primary);
+  color: #7c2d12;
+}
+.btn-filtru.reset:hover{
+  background: #fdba74;
+}
+
+/* Dropdown de subcategorii */
+#subcategorii{
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #ffffff;
+}
+#subcategorii:focus{
+  outline: 2px solid var(--primary-light);
+  border-color: var(--primary);
+}
+
+/* Container pentru subcategorii – îl aliniem frumos sub butoane */
+#subcategorii-container{
+  flex: 1 1 200px;
+  min-width: 160px;
+}
+
+/* Responsive mic – când spațiul e îngust, butoanele ocupă toată lățimea */
+@media (max-width:420px){
+  .filter-bar{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-filtru,
+  #subcategorii{
+    width: 100%;
+    justify-content: center;
+  }
+  header .admin-link{ font-size:12.5px; padding:6px 10px; min-height:34px; }
+}
+
+/* Swiper în popup – vizibil și centrat */
+.popup-gallery { min-height: 360px; }
+.popup-gallery .swiper-wrapper { align-items: center; }
+.popup-gallery .swiper-slide { display: flex; align-items: center; justify-content: center; }
+.popup-gallery img{ width: 100%; height: auto; max-height: 70vh; object-fit: contain; }
+
+/* ===================== MARGINI STÂNGA/DREAPTA DOAR LA LISTA DE ANUNȚURI ===================== */
+.ads-row{ display:block; }
+.ads-content{ max-width: 1400px; margin: 0 auto; padding: 0 16px; }
+.ad-rail{ display:none; }
+
+@media (min-width: 1400px){
+  .ads-row{
+    display: grid;
+    grid-template-columns: 160px minmax(0,1fr) 160px;
+    gap: 16px;
+    align-items: start;
+  }
+  .ad-rail{
+    display: block;
+    position: sticky;
+    top: 20px;
+  }
+  .ad-rail img,
+  .ad-rail iframe,
+  .ad-rail .ad-placeholder{
+    width: 100%;
+    display: block;
+  }
+}
+
+/* CONTAINER pentru lista de anunturi */
+.lista-anunturi{
+  margin-top: 12px;
+}
+
+/* Adaugăm un pic de aer pe ecrane medii/mari */
+@media (min-width: 1200px){
+  .ads-content{ padding: 0 24px; }
+}
+
+/* Pe telefoane reducem padding-ul lateral */
+@media (max-width: 767px){
+  .ads-content{ padding: 0 10px; }
+}
+
+/* ===================== GRID ANUNȚURI: max 3 pe rând ===================== */
+.lista-anunturi{ display: grid; gap: 20px; }
+
+@media (min-width: 1200px){
+  .lista-anunturi{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  .lista-anunturi{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 767px){
+  .lista-anunturi{ grid-template-columns: 1fr; }
+}
+
+/* ===================== HEADER FIX: doar butoane + logo scalat ===================== */
+header .actions{ display: none !important; }
+header img{ max-height: 70px; width: auto; height: auto; }
+
+@media (max-width: 480px){
+  header img{ max-height: 56px; }
+}
+
+/* ===================== RESPONSIVE FIXES (HEADER & POPUP) ===================== */
+
+/* ===================== RESPONSIVE FIXES (HEADER & POPUP) ===================== */
+
+/* Header – asigurăm flex și pe desktop */
+.buton-actiuni {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Layout special pentru ecrane mici */
+@media (max-width: 767px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    align-items: flex-start;
+  }
+
+  /* Logo centrat pe tot rândul */
+  header .logo-wrapper {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+  }
+
+  header .logo-wrapper img {
+    max-width: 220px;
+    max-height: 56px;
+    height: auto;
+  }
+
+  /* Titlul centrat, pe rând separat */
+  .descriere {
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  /* Containerul de butoane ocupă tot rândul */
+  .buton-actiuni {
+    flex: 0 0 100%;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+
+  /* Fiecare buton se întinde și e ușor de apăsat cu degetul */
+  .buton-actiuni a {
+    flex: 1 1 0;
+    text-align: center;
+    margin-left: 0;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+
+  /* Link Admin pe rând separat, centrat */
+  .admin-link {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 4px;
+    font-size: 13px;
+  }
+
+  /* Popup detalii: pe mobil conținutul se afișează pe coloană pentru a nu depăși ecranul */
+  .popup-content {
+    width: 95%;
+    max-height: 90vh;
+  }
+  .popup-body {
+    flex-direction: column;
+  }
+  .popup-gallery {
+    min-height: 220px;
+  }
+  .popup-details {
+    padding: 15px;
+  }
+
+  /* Eliminare scroll orizontal accidental pe mobil */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* ===================== FIX FILTRE ACTIVE ===================== */
+
+/* buton de filtru activ (Toate + celelalte grupe) */
+.filter-bar .btn-filtru.activ,
+.filter-bar .btn-filtru.active {
+  background: #f97316;       /* portocaliu */
+  border-color: #f97316;
+  color: #ffffff;
+}
+
+/* buton "Toate" – normal alb, doar când e activ devine portocaliu */
+.btn-filtru.reset {
+  background: #ffffff;
+  border-color: #e5e7eb;
+  color: #374151;
+}
+
+.btn-filtru.reset.activ,
+.btn-filtru.reset.active {
+  background: #f97316;
+  border-color: #f97316;
+  color: #ffffff;
+}
+
+/* ===================== SUBMENIU SUBCATEGORII (PASTILE) ===================== */
+
+/* Varianta cu #subcat-menu (rândul de subcategorii) */
+#subcat-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 16px 12px;
+}
+
+#subcat-menu > * {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* subcategorie selectată (activă) */
+#subcat-menu > *.activ,
+#subcat-menu > *.active {
+  background: #ffffff;
+  border-color: #f97316;
+}
+
+/* ===================== OVERRIDE HEADER PENTRU MOBILE – FINAL ===================== */
+@media (max-width: 767px) {
+
+  /* header pe coloană, totul centrat */
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  /* logo centrat */
+  header .logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  header .logo-wrapper img {
+    max-width: 220px;
+    max-height: 56px;
+    height: auto;
+  }
+
+  /* titlul pe rând separat, centrat */
+  .descriere {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  /* container butoane: coloană, full-width */
+  .buton-actiuni {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  /* fiecare buton = full-width, ușor de apăsat */
+  .buton-actiuni a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    margin-left: 0;
+  }
+
+  /* Admin pe rând separat, centrat */
+  .admin-link {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 4px;
+    font-size: 13px;
+  }
+  .close-btn {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+}

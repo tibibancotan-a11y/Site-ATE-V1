@@ -1,0 +1,141 @@
+<?php
+// 🔐 Verificare autentificare admin
+session_start();
+if (!isset($_SESSION['admin'])) {
+    header("Location: login.php");
+    exit;
+}
+
+// 🔗 Conectare la baza de date și categorii utilaje
+include_once 'db.php';
+include_once __DIR__ . '/../includes/categorii.php';
+
+// 🧾 Preluare ID anunț din URL
+$id = $_GET['id'] ?? null;
+if (!$id) {
+    die("ID invalid.");
+}
+
+// 🔍 Căutare în baza de date după ID
+$stmt = $conn->prepare("SELECT * FROM anunturi WHERE id = ?");
+$stmt->bind_param("i", $id);
+$stmt->execute();
+$rezultat = $stmt->get_result();
+$anunt = $rezultat->fetch_assoc();
+
+// ⚠️ Verificare existență anunț
+if (!$anunt) {
+    die("Anuntul nu a fost gasit.");
+}
+
+// 📂 Separare imaginile existente în array
+$imagini = explode(";", $anunt['imagini']);
+?>
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Editare Anunt</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- 🎨 Stilizare rapidă pentru formularul de editare -->
+    <style>
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+        }
+        .container h2 {
+            text-align: center;
+        }
+        .container form input[type="text"],
+        .container form input[type="number"],
+        .container form textarea,
+        .container form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+        .img-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .img-preview div {
+            text-align: center;
+        }
+        .img-preview img {
+            max-width: 100px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 📋 Formular de editare anunț -->
+<div class="container">
+    <h2>Editare Anunt</h2>
+    <form action="save_edit.php" method="post" enctype="multipart/form-data">
+        <!-- 🔐 ID-ul anunțului (hidden) -->
+        <input type="hidden" name="id" value="<?= $anunt['id'] ?>">
+
+        <label>Titlu:</label>
+        <input type="text" name="titlu" value="<?= htmlspecialchars($anunt['titlu']) ?>" required>
+
+        <label>Descriere:</label>
+        <textarea name="descriere" maxlength="500"><?= htmlspecialchars($anunt['descriere']) ?></textarea>
+
+        <label>Pret (EURO):</label>
+        <input type="number" name="pret" value="<?= $anunt['pret'] ?>" required>
+
+        <!-- 🔽 Selectare categorie (cu preselectie actuala) -->
+        <label>Categorie:</label>
+        <select name="categorie" required>
+            <?php
+            include_once '../includes/categorii.php';
+            foreach ($categorii_utilaje as $categorie) {
+                $selected = ($categorie == $anunt['categorie']) ? 'selected' : '';
+                echo "<option value=\"$categorie\" $selected>$categorie</option>";
+            }
+            ?>
+        </select>
+
+        <!-- 🖼️ Imagini existente + opțiuni de ștergere -->
+        <label>Imagini existente:</label>
+        <div class="img-preview">
+            <?php foreach ($imagini as $img): ?>
+                <?php if (!empty($img)): ?>
+                    <div>
+                        <img src="../uploads/<?= $img ?>"><br>
+                        <input type="checkbox" name="sterge_imagini[]" value="<?= $img ?>"> Sterge
+                    </div>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
+
+        <!-- 📥 Încărcare imagini noi -->
+        <label>Adauga imagini noi:</label>
+        <input type="file" name="imagini[]" multiple>
+
+        <!-- ✅ Buton salvare -->
+        <div class="center">
+            <input type="submit" value="Salveaza modificarile">
+        </div>
+    </form>
+
+    <!-- 🔙 Link înapoi -->
+    <div class="center">
+        <br><a href="panel.php">← Inapoi la panou</a>
+    </div>
+</div>
+
+</body>
+</html>
